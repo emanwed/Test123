@@ -8,7 +8,7 @@ export function NewsPreview() {
   return (
     <Section tone="tint" id="news">
       <div className="flex flex-wrap items-end justify-between gap-6">
-        <SectionHeading eyebrow="Newsroom" title="Latest from DaleelStore" />
+        <SectionHeading eyebrow="Newsroom" title="Latest from Daleel" />
         <Link href="/newsroom/" className="btn btn-ghost">All news <ArrowRight className="h-4 w-4" /></Link>
       </div>
       <ul className="mt-10 grid gap-5 md:grid-cols-3">

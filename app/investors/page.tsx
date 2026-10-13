@@ -19,7 +19,7 @@ export default function InvestorsPage() {
   ];
   return (
     <>
-      <PageHero eyebrow="Investors" title="Backing the digital value layer of the Middle East." body="DaleelStore combines an eight-year consumer franchise with a profitable, fast-growing B2B and infrastructure business. This page summarises the opportunity; the full data room is available to qualified investors on request.">
+      <PageHero eyebrow="Investors" title="Backing the digital value layer of the Middle East." body="Daleel combines an eight-year consumer franchise with a profitable, fast-growing B2B and infrastructure business. This page summarises the opportunity; the full data room is available to qualified investors on request.">
         <div className="flex flex-wrap gap-3">
           <Link href="/contact/?topic=investors" className="btn btn-light"><Mail className="h-4 w-4" /> Request the deck</Link>
           <a href={`mailto:${site.investorsEmail}`} className="btn btn-ghost-dark">{site.investorsEmail}</a>
@@ -39,7 +39,7 @@ export default function InvestorsPage() {
       </Section>
 
       <Section tone="tint">
-        <SectionHeading eyebrow="Investment thesis" title="Why now, why DaleelStore" />
+        <SectionHeading eyebrow="Investment thesis" title="Why now, why Daleel" />
         <ol className="mt-12 grid gap-5 md:grid-cols-2">
           {thesis.map((t, i) => (
             <Reveal key={t.t} as="li" delay={i} className="card p-7">

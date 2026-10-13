@@ -14,7 +14,7 @@ export function Segments() {
     <Section id="segments">
       <div className="grid gap-10 lg:grid-cols-12">
         <div className="lg:col-span-4">
-          <SectionHeading eyebrow="Who we serve" title="Built for the organisations that move value at scale." body="Select your organisation type to see how partners use DaleelStore." />
+          <SectionHeading eyebrow="Who we serve" title="Built for the organisations that move value at scale." body="Select your organisation type to see how partners use Daleel." />
           <div className="mt-8 flex flex-col gap-2">
             {segments.map((x) => (
               <button key={x.id} onClick={() => setId(x.id)} className={`flex items-center justify-between rounded-2xl border px-4 py-3.5 text-left text-sm font-bold transition ${id === x.id ? "border-navy bg-navy text-white" : "border-line bg-white text-navy hover:border-navy/40"}`} aria-pressed={id === x.id}>

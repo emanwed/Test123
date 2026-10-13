@@ -26,7 +26,7 @@ export function Hero() {
           </motion.h1>
 
           <motion.p initial={{ opacity: 0, y: 16 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.2, duration: 0.8 }} className="mt-6 max-w-xl text-lg leading-relaxed text-white/75">
-            DaleelStore runs the region's largest marketplace for gift cards, gaming credit and top-ups, and the B2B platform, API and fraud engine that let banks, telcos and enterprises move digital value to millions of people, instantly.
+            Daleel runs the region's largest marketplace for gift cards, gaming credit and top-ups, and the B2B platform, API and fraud engine that let banks, telcos and enterprises move digital value to millions of people, instantly.
           </motion.p>
 
           <motion.div initial={{ opacity: 0, y: 16 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.3, duration: 0.8 }} className="mt-8 flex flex-wrap gap-3">

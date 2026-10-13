@@ -22,7 +22,7 @@ export default function NewsroomPage() {
             <div className="card p-6">
               <p className="text-xs font-bold uppercase tracking-[0.14em] text-muted">Boilerplate</p>
               <p className="mt-3 text-navy">{site.description}</p>
-              <p className="mt-3 text-sm text-muted">Founded in {site.founded} and headquartered in {site.hq}, DaleelStore operates DaleelStore, DaleelBusiness, Daleel API, DaleelGuard, Daleel Loyalty, DaleelX and Bonus.</p>
+              <p className="mt-3 text-sm text-muted">Founded in {site.founded} and headquartered in {site.hq}, Daleel operates DaleelStore, DaleelBusiness, Daleel API, DaleelGuard, Daleel Loyalty, DaleelX and Bonus.</p>
             </div>
             <ul className="mt-6 grid gap-3 sm:grid-cols-2">
               {pressMentions.map((m) => (

@@ -1,36 +1,51 @@
 import Link from "next/link";
+import { MARK_PATH, DALEEL_PATH, ARABIC_PATH } from "@/lib/logo";
 
 /**
- * DaleelStore wordmark. The mark is a rounded geometric "د" (dal) inspired by the
- * official brand mark on the team banner. Replace the <svg> with the official SVG
- * from the brand kit when available.
+ * Official Daleel logo, vectorised from the brand file (black/gray corporate colourway).
+ * Mark: 244x214 · "Daleel": 293x64 · Arabic "دليل": 161x73.
  */
-export function LogoMark({ className = "h-8 w-8", color = "currentColor" }: { className?: string; color?: string }) {
+export function LogoMark({ className = "h-8 w-auto", color }: { className?: string; color?: string }) {
+  const id = "daleel-mark-grad";
   return (
-    <svg viewBox="0 0 64 64" className={className} aria-hidden="true" fill="none">
-      <path
-        d="M20 8c6.5 0 12 4.5 14.5 10.5L46 44c1.5 3.6-1.1 7.5-5 7.5H14c-3.3 0-6-2.7-6-6s2.7-6 6-6h18.2L22.6 21.3C21.8 19.6 20.3 19 19 19c-2.9 0-5.5-2.3-5.5-5.5S16 8 20 8Z"
-        fill={color}
-      />
-      <circle cx="50" cy="16" r="5" fill={color} />
+    <svg viewBox="0 0 244 214" className={className} aria-hidden="true">
+      {!color && (
+        <defs>
+          <linearGradient id={id} x1="0" y1="0" x2="1" y2="1">
+            <stop offset="0" stopColor="#0b0b0f" />
+            <stop offset="1" stopColor="#3a3a44" />
+          </linearGradient>
+        </defs>
+      )}
+      <path fill={color ?? `url(#${id})`} fillRule="evenodd" d={MARK_PATH} />
+    </svg>
+  );
+}
+
+/** Full lockup: Arabic over "Daleel", mark to the right. viewBox 520 x 160. */
+export function LogoLockup({ dark = false, className = "h-9 w-auto" }: { dark?: boolean; className?: string }) {
+  const text = dark ? "#ffffff" : "#0b0b0f";
+  const arabic = dark ? "rgba(255,255,255,0.7)" : "#6b6f7b";
+  const id = dark ? "daleel-lockup-white" : "daleel-lockup-grad";
+  return (
+    <svg viewBox="0 0 520 160" className={className} role="img" aria-label="Daleel">
+      <defs>
+        <linearGradient id={id} x1="0" y1="0" x2="1" y2="1">
+          <stop offset="0" stopColor={dark ? "#ffffff" : "#0b0b0f"} />
+          <stop offset="1" stopColor={dark ? "#ffffff" : "#3a3a44"} />
+        </linearGradient>
+      </defs>
+      <g transform="translate(132 0)"><path fill={arabic} fillRule="evenodd" d={ARABIC_PATH} /></g>
+      <g transform="translate(0 87)"><path fill={text} fillRule="evenodd" d={DALEEL_PATH} /></g>
+      <g transform="translate(337 0) scale(0.7477)"><path fill={`url(#${id})`} fillRule="evenodd" d={MARK_PATH} /></g>
     </svg>
   );
 }
 
 export function Logo({ dark = false, className = "" }: { dark?: boolean; className?: string }) {
-  const color = dark ? "#ffffff" : "#090f30";
   return (
-    <Link href="/" className={`inline-flex items-center gap-2.5 ${className}`} aria-label="DaleelStore home">
-      <LogoMark className="h-9 w-9" color={color} />
-      <span className="leading-none" style={{ color }}>
-        <span className="block font-arabic text-[11px] font-semibold tracking-wide opacity-80" dir="rtl">
-          دليل ستور
-        </span>
-        <span className="block text-[19px] tracking-tight">
-          <span className="font-extrabold">Daleel</span>
-          <span className="font-medium">Store</span>
-        </span>
-      </span>
+    <Link href="/" className={`inline-flex items-center ${className}`} aria-label="Daleel home">
+      <LogoLockup dark={dark} className="h-10 w-auto" />
     </Link>
   );
 }

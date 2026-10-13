@@ -14,7 +14,7 @@ export const metadata: Metadata = { title: "Company", description: "Our story, m
 export default function CompanyPage() {
   return (
     <>
-      <PageHero eyebrow="Company" title="We make digital value move as easily as a message." body={`Founded in ${site.founded} in Riyadh, DaleelStore started as a store for Saudi gamers and grew into the platform that banks, telcos and enterprises use to reward, gift and top up millions of people across the region.`}>
+      <PageHero eyebrow="Company" title="We make digital value move as easily as a message." body={`Founded in ${site.founded} in Riyadh, Daleel started as a store for Saudi gamers and grew into the platform that banks, telcos and enterprises use to reward, gift and top up millions of people across the region.`}>
         <dl className="grid max-w-3xl grid-cols-2 gap-6 sm:grid-cols-4">
           {heroStats.map((s) => (
             <div key={s.label}><dt className="text-3xl font-extrabold text-white"><Counter value={s.value} suffix={s.suffix} /></dt><dd className="text-xs text-white/60">{s.label}</dd></div>

@@ -24,7 +24,7 @@ export function Growth() {
         <Reveal className="card p-6 md:p-8 lg:col-span-7">
           <div className="flex items-baseline justify-between">
             <h3 className="text-lg font-extrabold text-navy">Orders per year</h3>
-            <span className="text-xs text-muted">Source: DaleelStore data lake · 2026 is Jan–Oct</span>
+            <span className="text-xs text-muted">Source: Daleel data lake · 2026 is Jan–Oct</span>
           </div>
           <div className="mt-8 flex h-64 items-stretch gap-2 sm:gap-3" role="img" aria-label="Bar chart of orders per year from 2018 to 2026, rising from about 100 thousand to over 2 million.">
             {ordersByYear.map((o, i) => (

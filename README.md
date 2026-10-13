@@ -1,4 +1,4 @@
-# DaleelStore corporate website
+# Daleel corporate website
 
 Corporate site for DaleelStore (company.daleelstore.com): products, traction, leadership, investors, newsroom, careers and contact. Built as a static Next.js export so it can be hosted on Cloudflare Pages, Vercel, Netlify or any static host.
 
@@ -34,7 +34,7 @@ npx serve out    # preview the export
 
 ## Brand
 
-Colors were sampled from the official July 2026 LinkedIn banner: navy `#090F30`, lavender `#DDE0FF`. Indigo/violet accents, the geometric sans (Manrope) and the logo mark in `components/Logo.tsx` are stand-ins until the Figma design-system tokens and the official SVG logo are dropped in. All tokens live in one place (`@theme` block in `app/globals.css`).
+The logo in `components/Logo.tsx` and `public/brand/` is the official mark and wordmark, vectorised from the brand file and set in the corporate black/gray colourway (`#0B0B0F` to `#3A3A44`, Arabic in `#6B6F7B`). The brand name is **Daleel**; DaleelStore remains the name of the consumer marketplace. Navy `#090F30` and lavender `#DDE0FF` were sampled from the July 2026 LinkedIn banner; indigo/violet accents and Manrope for body text are stand-ins until the Figma tokens arrive. All tokens live in one place (`@theme` block in `app/globals.css`).
 
 ## Before launch
 

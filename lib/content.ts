@@ -8,11 +8,11 @@
  */
 
 export const site = {
-  name: "DaleelStore",
+  name: "Daleel",
   legalName: "DaleelStore for Information Technology Company, LLC", // [public] terms of use
   tagline: "The digital value infrastructure of the Middle East",
   description:
-    "DaleelStore is Saudi Arabia's leading digital gift-card and e-voucher ecosystem: a consumer marketplace, a B2B distribution platform, an API, and a fraud-protection layer serving over a million customers and hundreds of partners.",
+    "Daleel is Saudi Arabia's leading digital gift-card and e-voucher ecosystem: a consumer marketplace, a B2B distribution platform, an API, and a fraud-protection layer serving over a million customers and hundreds of partners.",
   url: "https://company.daleelstore.com",
   storeUrl: "https://daleelstore.com",
   businessUrl: "https://business.daleelstore.com",
@@ -90,7 +90,7 @@ export const products: Product[] = [
   {
     slug: "daleelstore",
     name: "DaleelStore",
-    short: "Consumer marketplace",
+    short: "Consumer marketplace (daleelstore.com)",
     audience: "Consumers",
     tagline: "The region's largest marketplace for digital cards, gaming credit and top-ups.",
     description:
@@ -281,7 +281,7 @@ export const products: Product[] = [
     audience: "HR teams and employers",
     tagline: "Peer-to-peer recognition with rewards employees actually want.",
     description:
-      "Bonus (bonus.sa) is DaleelStore's workplace recognition platform. Teams give points for great work, managers run budgets, and employees redeem for thousands of gift cards from the DaleelStore catalogue. Launched in 2024.",
+      "Bonus (bonus.sa) is Daleel's workplace recognition platform. Teams give points for great work, managers run budgets, and employees redeem for thousands of gift cards from the DaleelStore catalogue. Launched in 2024.",
     accent: "mint",
     icon: "gift",
     features: [
@@ -362,7 +362,7 @@ export const partnerGroups = {
 /* Timeline                                                            */
 /* ------------------------------------------------------------------ */
 export const timeline = [
-  { year: "2018", title: "DaleelStore launches in Riyadh", body: "A gift-card and gaming-credit store built for Saudi gamers. First orders in February 2018." },
+  { year: "2018", title: "Daleel launches in Riyadh", body: "A gift-card and gaming-credit store built for Saudi gamers. First orders in February 2018." },
   { year: "2020", title: "Crossing 750K orders a year", body: "Lockdown-era demand triples volume; telecom top-ups and app-store cards join gaming." },
   { year: "2022", title: "DaleelBusiness goes live", body: "Wholesale platform for resellers and corporates, with wallet funding and bulk ordering." },
   { year: "2023", title: "Bank loyalty partnerships", body: "Redemption catalogues for Al Rajhi Mokafaa and STC Qitaf; retail-media partnership with ArabyAds." },
@@ -375,13 +375,13 @@ export const timeline = [
 /* Leadership (titles from internal directory, Oct 2026)               */
 /* ------------------------------------------------------------------ */
 export const leadership = [
-  { name: "AbdulRahman M. Suliman", title: "Partner & Chief Executive Officer", bio: "Joined DaleelStore in 2023 after leadership roles at Careem and the Saudi Tourism Authority. Computer-engineering graduate (UQU) with Harvard executive education.", initials: "AS" },
+  { name: "AbdulRahman M. Suliman", title: "Partner & Chief Executive Officer", bio: "Joined Daleel in 2023 after leadership roles at Careem and the Saudi Tourism Authority. Computer-engineering graduate (UQU) with Harvard executive education.", initials: "AS" },
   { name: "Khalid Olayan", title: "Chief Product Officer", bio: "Leads product, design and data. Drove the 2024 rebrand, the new checkout and wallet, and the Arabic UX-writing system used across the platform.", initials: "KO" },
   { name: "Muhammad Badrah", title: "Chief Technology Officer", bio: "20+ years in software engineering leadership, including CircleCI and Flipp. Scaling our engineering organisation and platform reliability.", initials: "MB" },
   { name: "Shehab Salah", title: "Chief Financial Officer", bio: "Owns finance, treasury and investor relations, including supplier wallets, reconciliation and the company's fundraising process.", initials: "SS" },
   { name: "Basheer Alomari", title: "Chief Commercial Officer", bio: "Leads B2B sales, resellers and bank partnerships. Delivered the record 2025 B2B quarter and the first DaleelGuard clients.", initials: "BA" },
   { name: "Ahmed Zaater", title: "Head of Growth & Communications", bio: "Brand, PR and retention. Leads communications for partnerships such as MoneyHash and the upcoming funding announcement.", initials: "AZ" },
-  { name: "Saif Eliwat", title: "Head of Marketing", bio: "Performance marketing and SEO across KSA and international markets; 11+ years in regional agencies before DaleelStore.", initials: "SE" },
+  { name: "Saif Eliwat", title: "Head of Marketing", bio: "Performance marketing and SEO across KSA and international markets; 11+ years in regional agencies before Daleel.", initials: "SE" },
   { name: "Jumanah Olayan", title: "Supply & Procurement Manager", bio: "Manages 50+ supplier relationships, inventory health and new product launches across the catalogue.", initials: "JO" },
 ];
 
@@ -400,7 +400,7 @@ export const values = [
   { title: "People, then process", body: "Processes matter, but people drive real change." },
   { title: "Values, then attitude, then skills", body: "We can teach skills; we can't teach values." },
   { title: "Move fast", body: "Act, learn and adjust quickly instead of waiting for perfection." },
-  { title: "Think big", body: "We imagine what DaleelStore can become in the region and the world." },
+  { title: "Think big", body: "We imagine what Daleel can become in the region and the world." },
   { title: "Build awesome things", body: "Tech, partnerships and experiences people are proud to use and share." },
   { title: "Be bold and proud", body: "We started small and came far. We face challenges with confidence." },
 ];
@@ -435,14 +435,14 @@ export const funding = {
 export type NewsItem = { date: string; category: "Company" | "Partnerships" | "Product"; title: string; excerpt: string; href?: string; placeholder?: boolean };
 
 export const news: NewsItem[] = [
-  { date: "2026-09-28", category: "Partnerships", title: "DaleelStore moves payment infrastructure to MoneyHash", excerpt: "Payment orchestration across multiple gateways to raise acceptance rates, lower processing cost and add new payment methods faster." },
+  { date: "2026-09-28", category: "Partnerships", title: "Daleel moves payment infrastructure to MoneyHash", excerpt: "Payment orchestration across multiple gateways to raise acceptance rates, lower processing cost and add new payment methods faster." },
   { date: "2026-09-17", category: "Product", title: "DaleelGuard signs its first paying client", excerpt: "Our in-house fraud detection and prevention system is now available to merchants, with a white-label option for partners." },
-  { date: "2026-06-17", category: "Company", title: "Muhammad Badrah joins as Chief Technology Officer", excerpt: "Former CircleCI and Flipp engineering leader to scale DaleelStore's platform and teams." },
-  { date: "2025-10-14", category: "Partnerships", title: "Riyad Bank and DaleelStore sign co-branded gaming card agreement", excerpt: "A co-branded gaming card offering exclusive deals and a seamless gaming experience for Riyad Bank customers." },
+  { date: "2026-06-17", category: "Company", title: "Muhammad Badrah joins as Chief Technology Officer", excerpt: "Former CircleCI and Flipp engineering leader to scale Daleel's platform and teams." },
+  { date: "2025-10-14", category: "Partnerships", title: "Riyad Bank and Daleel sign co-branded gaming card agreement", excerpt: "A co-branded gaming card offering exclusive deals and a seamless gaming experience for Riyad Bank customers." },
   { date: "2025-10-09", category: "Product", title: "STC top-up goes live with a direct API", excerpt: "Sawa, Sawa packages and Quicknet recharges, fully automated through a direct connection with STC." },
   { date: "2025-10-01", category: "Company", title: "Record quarter: SAR 20.8M monthly B2B revenue", excerpt: "+193% B2B revenue growth and +71% profit growth versus Q3 2024, with a 19% larger active reseller base." },
-  { date: "2024-12-19", category: "Company", title: "DaleelStore unveils a new brand across web and apps", excerpt: "A complete overhaul of the brand, storefront, checkout and wallet experience." },
-  { date: "2024-10-24", category: "Partnerships", title: "DaleelStore concludes Seamless KSA 2024 with partnership deals", excerpt: "Agreements with Moyasar, Qsalary, Maqsam, Adjust and others.", href: "https://english.mubasher.info/news/4358890/DaleelStore-concludes-Seamless-KSA-2024-with-mega-partnership-deals/" },
+  { date: "2024-12-19", category: "Company", title: "Daleel unveils a new brand across web and apps", excerpt: "A complete overhaul of the brand, storefront, checkout and wallet experience." },
+  { date: "2024-10-24", category: "Partnerships", title: "Daleel concludes Seamless KSA 2024 with partnership deals", excerpt: "Agreements with Moyasar, Qsalary, Maqsam, Adjust and others.", href: "https://english.mubasher.info/news/4358890/DaleelStore-concludes-Seamless-KSA-2024-with-mega-partnership-deals/" },
   { date: "2024-09-06", category: "Product", title: "Bonus, our employee recognition platform, is live", excerpt: "Peer-to-peer recognition with instant rewards from the DaleelStore catalogue." },
   { date: "2023-07-18", category: "Partnerships", title: "Exclusive retail-media partnership with ArabyAds' Ritelo", excerpt: "Bringing retail-media technology to the region's largest gift-card marketplace.", href: "https://mmaglobal.com/news/daleelstore-partners-exclusively-arabyads-ritelo-retail-media-technology" },
 ];
@@ -478,7 +478,7 @@ export const perks = [
 /* FAQ                                                                  */
 /* ------------------------------------------------------------------ */
 export const faqs = [
-  { q: "What does DaleelStore do?", a: "We operate the region's largest marketplace for digital gift cards, gaming credit and top-ups, and we provide the B2B platform, API and fraud engine that let banks, telcos, resellers and enterprises distribute digital value to their own customers." },
+  { q: "What does Daleel do?", a: "We operate the region's largest marketplace for digital gift cards, gaming credit and top-ups, and we provide the B2B platform, API and fraud engine that let banks, telcos, resellers and enterprises distribute digital value to their own customers." },
   { q: "Which markets do you serve?", a: "Saudi Arabia is our home market. We operate dedicated storefronts for the UAE, Kuwait, Qatar, Bahrain, Oman, Egypt and international catalogues, with pricing in SAR, USD, EGP and KWD." },
   { q: "How do I become a reseller or partner?", a: "Use the contact form and choose 'DaleelBusiness'. Our commercial team completes onboarding, from KYB to a funded wallet, typically within days." },
   { q: "Do you offer an API?", a: "Yes. Daleel API exposes the catalogue, pricing, availability and fulfilment with webhooks and a sandbox. Request access through the contact page." },

@@ -12,7 +12,7 @@ export function Fundraising() {
         <div className="lg:col-span-7">
           <p className="eyebrow on-dark">Investors</p>
           <h2 className="h-section mt-4 text-balance text-3xl text-white md:text-5xl">
-            {funding.announced ? `DaleelStore raises ${funding.amount} ${funding.roundName}` : "We are preparing our next chapter."}
+            {funding.announced ? `Daleel raises ${funding.amount} ${funding.roundName}` : "We are preparing our next chapter."}
           </h2>
           <p className="mt-5 max-w-2xl text-lg text-white/70">
             {funding.announced

@@ -15,7 +15,7 @@ export default function CareersPage() {
         <Link href="#roles" className="btn btn-light">See open roles <ArrowRight className="h-4 w-4" /></Link>
       </PageHero>
       <Section>
-        <SectionHeading eyebrow="Life at DaleelStore" title="What you get" />
+        <SectionHeading eyebrow="Life at Daleel" title="What you get" />
         <ul className="mt-10 grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
           {perks.map((p, i) => (
             <Reveal key={p.title} as="li" delay={i} className="card p-6"><h3 className="text-lg font-extrabold text-navy">{p.title}</h3><p className="mt-2 text-sm text-muted">{p.body}</p></Reveal>
